@@ -1,0 +1,45 @@
+<ion-view id="account" view-title="账户设置" hide-back-button="true" cache-view="true">
+    <div style="background:url(images/amusement_bg.jpg) center center;height:700px;">
+        <ion-header-bar class="bar-positive">
+            <h1 class="title">账户</h1>
+        </ion-header-bar>
+        <ion-content scroll="false">
+            <div class=".light-bg padding-top padding-bottom" id="account_touxiang
+">
+                <label id="info" class=" item item-icon-right" ng-click="func_showAction()">
+                    <img id="touxiang" ng-src="images/tryLang_small.jpg">
+                    <span>Jane</span>
+                    <i class="icon ion-ios-arrow-right"></i>
+                </label>
+            </div>
+            <div class="list" id="account_list">
+                <div class="item .light-bg padding-top item-icon-right">
+                    <label>账号与安全
+                        <i class="icon ion-ios-arrow-right"></i>
+                    </label>
+                </div>
+                <div class="item .light-bg padding-top item-icon-right">
+                    <label>通用
+                        <i class="icon ion-ios-arrow-right"></i>
+                    </label>
+                </div>
+                <div class="item .light-bg padding-top item-icon-right">
+                    <label>关于主人
+                        <i class="icon ion-ios-arrow-right"></i>
+                    </label>
+                </div>
+                <div class="item .light-bg padding-top item-icon-right" ng-click="callPhone('18295835427')">
+                    <label>联系我吧\(^o^)/~</label>
+                    <a class="telephone" href="tel:18295835427">18295835427</a>
+                </div>
+                <div class="item .light-bg padding-top item-icon-right">
+                    <label>版本信息</label>
+                    <span class="version">V1.0</span>
+                </div>
+            </div>
+            <div class="padding-top">
+                <button class="button button-block button-assertive " ng-click="func_exitApp()">退出登录</button>
+            </div>
+        </ion-content>
+    </div>
+</ion-view>

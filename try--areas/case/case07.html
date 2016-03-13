@@ -1,0 +1,26 @@
+<ion-view id="body_case_list" view-title="案例展示" hide-back-button="true" cache-view="false">
+    <!-- Top Navigation -->
+    <div id="headerbar" class="headerBar container">
+        <header class="clearfix">
+            <div class="navbar navbar-default navbar-fixed-top navbar-center">
+                <div class="anli-more">
+                    <a href="" class="fr" style="margin-right:0 ">返回案例</a>
+                    <h2 class="navbar-tit zhuse" id="title">{{data.title}}</h2>
+                    <p>
+                        <span id="time">{{data.time}}</span>&nbsp;&nbsp;&nbsp; 开源中国：<a href="javascrip
+t:if(confirm(%27http://www.oschina.net/blog/ \n\nDo you want to open it from the server?%27))window.location=%27http://www.oschina.net/blog/%27" id="case-a-link" target="_blank" title="访问网站">http://www.oschina.net/blog/</a> &nbsp;&nbsp;&nbsp;
+                    </p>
+                </div>
+            </div>
+        </header>
+    </div>
+    <ion-content class="scroll-content" scroll="false">
+        <div class="clear h140" style=""></div>
+        <!--左-->
+        <p class="gs-con"><span id="des">概述：{{data.des}}</span></p>
+        <div class="case_bigimg wow zoomInDown" data-wow-delay="0.3s">
+            <p class="" id="images"><img ng-src="{{data.src}}">
+            </p>
+        </div>
+    </ion-content>
+</ion-view>

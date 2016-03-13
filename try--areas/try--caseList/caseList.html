@@ -1,0 +1,29 @@
+<ion-view id="body_case_list" view-title="CASE_LIST" cache-view="true">
+    <div id="headerbar" class="headerBar">
+        <header class="clearfix">
+            <div class="navbar navbar-default navbar-fixed-top  navbar-center">
+                <a ng-href="#" class="current">全部</a>
+                <a ng-href="#">页面制作</a>
+                <a ng-href="#">移动APP</a>
+                <a href="#tabs/about">返回目录</a>
+            </div>
+        </header>
+    </div>
+    <ion-content class="scroll-content" scroll="false">
+        <div class="clear h140" style=""></div>
+        <ul class="grid cs-style-3">
+            <li ng-repeat="item in caseData" ui-sref="case({Number:{{item.Number}}})">
+                <figure>
+                    <a>
+                        <img ng-src="{{item.src}}" alt="" image-lazy-loader="lines">
+                        <figcaption>
+                            <h3>{{item.title}}</h3>
+                            <span>{{item.time}}</span>
+                        </figcaption>
+                    </a>
+                </figure>
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>
+<!-- <script src="js/case/toucheffects.js" ></script> -->

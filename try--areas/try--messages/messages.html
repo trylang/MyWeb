@@ -1,0 +1,34 @@
+<ion-view id="body_contact" view-title="try" cache-view="false">
+    <div id="headerbar" class="headerBar">
+        <!--顶部-->
+        <div id="header">
+            <div class="pd20">
+                <!--logo-->
+                <div class="logo fl">
+                    <a ng-href="index.html" title="网站首页"><img ng-src="images/logo.png"></a>
+                </div>
+            </div>
+        </div>
+        <!--内页导航-->
+        <div id="in_nav" class="wow bounceInDown">
+            <a href="#tabs/about">HOME</a>
+            <a href="#tabs/essay">ESSAY</a>
+            <a href="#tabs/caseList">WORKS</a>
+            <a href="#tabs/about">ACCOUNT</a>
+            <a class="hover yahei" href="#tabs/messages">留言版</a>
+        </div>
+    </div>
+    <ion-content class="scroll-content" scroll="false">
+    </ion-content>
+    <p style="width:100%;font-size:16px;height:20px;text-align:center;margin-bottom:50px;">使用swiper移动端特效插件简单做的一个轮播图。嘿嘿~~ 留言板还没有做出来，敬请期待~
+    </p>
+    <!--主内容区域-->
+    <div class="banner" style="width:100%;height:540px;">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" ng-repeat="item in slideData"><img ng-src="{{item.src}}" alt="{{item.alt}}"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</ion-view>
